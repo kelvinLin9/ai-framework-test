@@ -2,6 +2,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/home';
 import Page1 from './pages/page-1';
 import Details from './components/page1-details';
+import { Button } from "./components/ui/button"
 
 export function App() {
   return (
@@ -27,6 +28,7 @@ export function App() {
             <div>
               <p className="text-2xl text-red-500">Page not found.</p>
               <Link to="/">Go back to Home</Link>
+              <Button>Click me</Button>
             </div>
           }
         />
